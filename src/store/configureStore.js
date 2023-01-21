@@ -8,7 +8,7 @@ const fetchGreetings = createAsyncThunk(
   'greetings/fetchGreetings',
   async () => {
     const response = await fetch(
-      'https://greeting-t0aj.onrender.com/greetings'
+      'http://[::1]:3000/api/v1/greetings'
     );
     const data = await response.json();
     return data;
